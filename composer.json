@@ -1,0 +1,19 @@
+{
+    "name": "reinetwork/themoviedb",
+    "description": "Pair programming project skeleton.",
+    "authors": [
+        {
+            "name": "Travis Miller",
+            "email": "travis@reinetworklp.com"
+        }
+    ],
+    "require": {
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.3",
+        "mockery/mockery": "~0.9"
+    },
+    "autoload": {
+        "psr-4": { "REINetwork\\TheMovieDb\\" : "src/" }
+    }
+}
