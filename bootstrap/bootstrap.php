@@ -4,6 +4,7 @@
 ini_set('memory_limit', -1);
 
 // Want to see all errors
+ini_set('display_errors', 'stderr');
 error_reporting(-1);
 
 // PHP Requires default timezone
