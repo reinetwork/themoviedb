@@ -1,6 +1,9 @@
 <?php
 
-class ClientTest extends PHPUnit_Framework_TestCase
+use PHPUnit\Framework\Assert;
+use PHPUnit\Framework\TestCase;
+
+class ClientTest extends TestCase
 {
     /**
      * @var REINetwork\TheMovieDb\Client
@@ -28,7 +31,7 @@ class ClientTest extends PHPUnit_Framework_TestCase
 
         $this->assertEquals(
             $token,
-            PHPUnit_Framework_Assert::readAttribute($this->client, 'token'),
+            Assert::readAttribute($this->client, 'token'),
             'API access token is set'
         );
     }
